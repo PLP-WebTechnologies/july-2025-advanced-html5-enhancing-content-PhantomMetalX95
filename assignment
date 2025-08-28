@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+  <meta name="description" content="Enhanced HTML5 form with validation, semantic structure, and media.">
+</head>
+<body>
+
+  <header>
+    <h1>Registration Page</h1>
+    <p>Fill out the form below to register for our upcoming event.</p>
+  </header>
+
+  <main>
+    <!-- Media Example -->
+    <section>
+      <h2>Event Preview</h2>
+      <figure>
+        <img src="event.jpg" alt="Event Banner" width="300">
+        <figcaption>Join us for an exciting learning experience!</figcaption>
+      </figure>
+    </section>
+
+    <!-- List Example -->
+    <section>
+      <h2>Event Highlights</h2>
+      <ul>
+        <li>Expert Speakers</li>
+        <li>Networking Opportunities</li>
+        <li>Free Resources and Giveaways</li>
+      </ul>
+    </section>
+
+    <!-- Table Example -->
+    <section>
+      <h2>Event Schedule</h2>
+      <table>
+        <caption>Schedule of Sessions</caption>
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Session</th>
+            <th scope="col">Speaker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 AM</td>
+            <td>Opening Remarks</td>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td>Keynote Speech</td>
+            <td>John Smith</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Example -->
+    <section>
+      <h2>Register Now</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          <br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          <br><br>
+
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+          <br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Booking Details</legend>
+
+          <label for="tickets">Number of Tickets:</label>
+          <input type="number" id="tickets" name="tickets" min="1" max="5" required>
+          <br><br>
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+          <br><br>
+
+          <label for="eventcode">Event Code:</label>
+          <input type="text" id="eventcode" name="eventcode" value="EVT2025" readonly>
+          <br><br>
+        </fieldset>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+          <legend>Meal Preference:</legend>
+          <label for="veg"><input type="radio" id="veg" name="meal" value="vegetarian" required> Vegetarian</label>
+          <label for="nonveg"><input type="radio" id="nonveg" name="meal" value="non-vegetarian"> Non-Vegetarian</label>
+        </fieldset>
+        <br>
+
+        <!-- Checkbox -->
+        <label for="terms"><input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Corp. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
